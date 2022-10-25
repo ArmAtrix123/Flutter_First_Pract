@@ -145,46 +145,56 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Column(children: [
       Stack(children: [
         Container(
-          child: Image.asset('assets/Image.png'),
-          width: 341,
-          height: 241,
-          margin: EdgeInsets.fromLTRB(24, 36, 24, 0),
+          child: const Image(
+            image: AssetImage('assets/Image.png'),
+            width: 341,
+            height: 231,
+          ),
+          margin: EdgeInsets.fromLTRB(30, 53, 0, 0),
         ),
         Container(
-          child: Image.asset('assets/Frame23.png'),
-          width: 343,
-          height: 219,
-          margin: EdgeInsets.fromLTRB(24, 53, 24, 0),
+          child: const Image(
+            image: AssetImage('assets/Frame23.png'),
+            width: 341,
+            height: 231,
+          ),
+          margin: EdgeInsets.fromLTRB(30, 53, 0, 0),
         ),
         Container(
           margin: EdgeInsets.fromLTRB(30, 300, 0, 0),
           child: Text(
             'Peter Mach',
-            style: TextStyle(fontWeight: FontWeight.normal, fontSize: 12),
-            // fontFamily: 'PlusJakartaSans'),
+            style: TextStyle(
+                fontWeight: FontWeight.normal,
+                fontSize: 12,
+                fontFamily: 'PlusJakartaSans'),
           ),
         ),
         Container(
-          margin: EdgeInsets.fromLTRB(33, 320, 0, 0),
+          margin: EdgeInsets.fromLTRB(30, 320, 0, 0),
           child: Text(
             'Mind Deep Relax',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-            // fontFamily: 'PlusJakartaSans'),
+            style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+                fontFamily: 'PlusJakartaSans'),
           ),
         ),
         Container(
-          margin: EdgeInsets.fromLTRB(33, 350, 28, 0),
+          margin: EdgeInsets.fromLTRB(30, 350, 20, 0),
           child: Text(
             'Join the Community as we prepare over 33'
             'days to relax and feel joy with the mind'
             'and happnies session across the World.',
-            style: TextStyle(fontWeight: FontWeight.normal, fontSize: 15),
-            // fontFamily: 'PlusJakartaSans'),
+            style: TextStyle(
+                fontWeight: FontWeight.normal,
+                fontSize: 15,
+                fontFamily: 'PlusJakartaSans'),
           ),
         ),
         Container(
             width: 342,
-            margin: EdgeInsets.fromLTRB(24, 430, 0, 0),
+            margin: EdgeInsets.fromLTRB(28, 425, 0, 0),
             child: ElevatedButton(
                 onPressed: () => {},
                 style: ElevatedButton.styleFrom(
@@ -193,7 +203,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50))),
                 child: const Text(
-                  ' Play Next Session',
+                  'Play Next Session',
                   textDirection: TextDirection.ltr,
                   style: TextStyle(
                     fontSize: 16,
@@ -203,97 +213,108 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ))),
         Container(
-          child: Image.asset(
-            'Assets/Group2.png',
+          child: const Image(
+            image: AssetImage('assets/shape.png'),
+            // width: 341,
+            // height: 231,
           ),
-          margin: EdgeInsets.fromLTRB(108, 451, 0, 0),
+          margin: EdgeInsets.fromLTRB(115, 448, 0, 0),
         ),
-//Первая кнопка
         Container(
-          child: Image.asset('assets/shape.png'),
-          margin: EdgeInsets.fromLTRB(23, 500, 0, 0),
+          child: const Image(
+            image: AssetImage('assets/Group2.png'),
+          ),
+          margin: EdgeInsets.fromLTRB(30, 500, 0, 0),
         ),
         Container(
           child: Text(
             'Sweet Memories',
             style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 17,
-            ),
+                fontWeight: FontWeight.bold,
+                fontSize: 17,
+                fontFamily: 'PlusJakartaSans'),
           ),
-          margin: EdgeInsets.fromLTRB(78, 500, 0, 0),
+          margin: EdgeInsets.fromLTRB(80, 500, 0, 0),
         ),
         Container(
           child: Text(
             'December 29 Pre-Launch',
             style: TextStyle(
-              fontWeight: FontWeight.normal,
-              fontSize: 12,
-            ),
+                fontWeight: FontWeight.normal,
+                fontSize: 12,
+                fontFamily: 'PlusJakartaSans'),
           ),
-          margin: EdgeInsets.fromLTRB(78, 520, 0, 0),
+          margin: EdgeInsets.fromLTRB(80, 528, 0, 0),
         ),
         Container(
-          child: Image.asset('assets/Group3.png'),
-          margin: EdgeInsets.fromLTRB(327, 518, 0, 0),
+          child: const Image(
+            image: AssetImage('assets/Group3.png'),
+          ),
+          margin: EdgeInsets.fromLTRB(330, 520, 0, 0),
         ),
-//2 кнопка
         Container(
-          child: Image.asset('assets/Group4.png'),
-          margin: EdgeInsets.fromLTRB(23, 550, 0, 0),
+          child: const Image(
+            image: AssetImage('assets/Group4.png'),
+          ),
+          margin: EdgeInsets.fromLTRB(30, 565, 0, 0),
         ),
         Container(
           child: Text(
             'A Day Dream',
             style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 17,
-            ),
+                fontWeight: FontWeight.bold,
+                fontSize: 17,
+                fontFamily: 'PlusJakartaSans'),
           ),
-          margin: EdgeInsets.fromLTRB(78, 550, 0, 0),
+          margin: EdgeInsets.fromLTRB(80, 565, 0, 0),
         ),
         Container(
           child: Text(
             'December 29 Pre-Launch',
             style: TextStyle(
-              fontWeight: FontWeight.normal,
-              fontSize: 12,
-            ),
+                fontWeight: FontWeight.normal,
+                fontSize: 12,
+                fontFamily: 'PlusJakartaSans'),
           ),
-          margin: EdgeInsets.fromLTRB(78, 575, 0, 0),
+          margin: EdgeInsets.fromLTRB(80, 593, 0, 0),
         ),
         Container(
-          child: Image.asset('assets/Group3.png'),
-          margin: EdgeInsets.fromLTRB(327, 560, 0, 0),
+          child: const Image(
+            image: AssetImage('assets/Group3.png'),
+          ),
+          margin: EdgeInsets.fromLTRB(330, 585, 0, 0),
         ),
-//3 кнопка
         Container(
-          child: Image.asset('assets/Group5.png'),
-          margin: EdgeInsets.fromLTRB(23, 600, 0, 0),
+          child: const Image(
+            image: AssetImage('assets/Group5.png'),
+          ),
+          margin: EdgeInsets.fromLTRB(30, 625, 0, 0),
         ),
         Container(
           child: Text(
             'Mind Explore',
             style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 17,
-            ),
+                fontWeight: FontWeight.bold,
+                fontSize: 17,
+                fontFamily: 'PlusJakartaSans'),
           ),
-          margin: EdgeInsets.fromLTRB(78, 600, 0, 0),
+          margin: EdgeInsets.fromLTRB(80, 625, 0, 0),
         ),
         Container(
           child: Text(
             'December 29 Pre-Launch',
             style: TextStyle(
-              fontWeight: FontWeight.normal,
-              fontSize: 12,
-            ),
+                fontWeight: FontWeight.normal,
+                fontSize: 12,
+                fontFamily: 'PlusJakartaSans'),
           ),
-          margin: EdgeInsets.fromLTRB(78, 625, 0, 0),
+          margin: EdgeInsets.fromLTRB(80, 653, 0, 0),
         ),
         Container(
-          child: Image.asset('assets/Group3.png'),
-          margin: EdgeInsets.fromLTRB(327, 610, 0, 0),
+          child: const Image(
+            image: AssetImage('assets/Group3.png'),
+          ),
+          margin: EdgeInsets.fromLTRB(330, 650, 0, 0),
         ),
       ])
     ])));
